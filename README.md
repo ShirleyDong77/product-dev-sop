@@ -1,30 +1,44 @@
-# Monica 产品开发 SOP
+# Product Development SOP
 
-基于飞书生态的完整产品开发流程。
+A complete 7-phase product development workflow, built for small teams and solo builders working asynchronously.
 
-## 七阶段流程
+## What's inside
 
-```
-Phase 1  需求阶段  → PRD + 评审
-Phase 2  设计阶段  → 设计文档 + 评审
-Phase 3  开发阶段  → 开发设计文档 + 排期
-Phase 4  测试阶段  → 测试用例 + 自己动手验证
-Phase 5  合规阶段  → 隐私/准确性/一致性检查
-Phase 6  验收阶段  → 用户验收 + 上线通告 + 验收报告
-Phase 7  复盘阶段  → 项目复盘 + 数据复盘
-```
+**7 phases** with execution steps and ready-to-use templates:
+- Requirements (PRD)
+- Design (with review process)
+- Development (task breakdown + schedule)
+- Testing (test cases + hands-on verification)
+- Compliance (privacy + accuracy + consistency)
+- Acceptance (sign-off + launch notice + report)
+- Retrospective (project + data)
 
-## 核心特点
+**Async review mechanism** — no meetings required, document comments + 48-hour silence rule
 
-- **异步评审**：飞书文档评论 + 48小时超时机制
-- **合规优先**：三阶段隐私/准确性/一致性检查
-- **实测驱动**：DevTools 亲眼看，不靠命令推断
-- **完整文档**：每个阶段都有模板和产出清单
+**Compliance checklist** — privacy scan, accuracy check, consistency check before any external release
 
-## 适用场景
+## Who this is for
 
-任何对外发布项目：网站 / 应用 / 文档 / GitHub 仓库
+- Solo founders and small teams shipping alone
+- Anyone wanting structured process without heavy tooling
+- Teams moving from ad-hoc to systematic workflows
 
-## 详细文档
+## Quick start
 
-见 [SKILL.md](SKILL.md)
+1. Copy the PRD template → fill in Phase 1
+2. Share via doc comment → start review
+3. Move through phases in order
+4. Use compliance check before any launch
+
+## Files
+
+- `SKILL.md` — full skill documentation with all templates
+- This README — overview
+
+## Customize
+
+Replace `[Project Name]` with your actual project name. Adapt phases and templates to your team size and workflow.
+
+---
+
+_License: MIT. Use freely, adapt freely._
