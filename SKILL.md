@@ -19,11 +19,11 @@ Step 4: Write 01 Requirements Analysis
 ↓
 Step 5: Review 01 → Approved
 ↓
-Step 6: Write 02 PRD
+Step 6: Write 02 PRD (含设计内容+HTML原型)
 ↓
 Step 7: Review 02 → Approved
 ↓
-Continue through Phase 2–7
+Continue through Phase 2–6
 ```
 
 **Step 1 — Research & Assess:**
@@ -53,7 +53,7 @@ See template below. 01 must be reviewed and approved before starting 02 PRD.
 
 ## What is this skill?
 
-This skill provides a complete 7-phase product development workflow for small to medium-sized projects. It is designed to be adapted to any team or individual.
+This skill provides a complete 6-phase product development workflow for small to medium-sized projects. It is designed to be adapted to any team or individual.
 
 **Who this is for:**
 - Solo builders or small teams shipping projects alone
@@ -63,35 +63,35 @@ This skill provides a complete 7-phase product development workflow for small to
 **What makes this different:**
 - Built for asynchronous work (no mandatory meetings)
 - Designed around written documentation (not verbal communication)
+- Phase 1 需求 + 设计合并（PRD 内含设计 + HTML 原型）
 - Includes compliance checks for external releases
 - All templates are ready to copy and use
 
 ---
 
-## The 7 Phases
+## The 6 Phases
 
 ```
-Phase 1  Requirements  → PRD + Review
-Phase 2  Design       → Design Doc + Review
-Phase 3  Development  → Dev Design + Schedule
-Phase 4  Testing      → Test Cases + Hands-on Verification
-Phase 5  Compliance   → Privacy / Accuracy / Consistency Check
-Phase 6  Acceptance  → User Sign-off + Launch Notice + Report
-Phase 7  Retrospective → Project + Data Retrospective
+Phase 1  Requirements & Design  → PRD (含设计+HTML原型) + Review
+Phase 2  Development  → Dev Design + Schedule
+Phase 3  Testing      → Test Cases + Hands-on Verification
+Phase 4  Compliance   → Privacy / Accuracy / Consistency Check
+Phase 5  Acceptance  → User Sign-off + Launch Notice + Report
+Phase 6  Retrospective → Project + Data Retrospective
 ```
+
+**Phase 1 需求 + 设计合并。PRD 文档内含设计内容 + HTML 原型链接，原型实时调整与需求文档同步更新。**
 
 ---
 
-## Phase 1: Requirements
+## Phase 1: Requirements & Design
 
 ### ⚠️ Phase 1 has TWO required documents
 
-**Phase 1 = 01需求分析 + 02PRD**
+**Phase 1 = 01需求分析 + 02PRD（含设计）**
 
 **01需求分析必须在02PRD之前完成。**
 01未通过评审，不得开始02PRD。
-
-**Why:** Without 01, the PRD lacks problem definition, user scenarios, and success criteria. This is why the Magazine calculator PRD was rejected — I skipped requirements analysis and went straight to PRD.
 
 ---
 
@@ -137,10 +137,11 @@ _Created:_
 
 ## 七、与 PRD 的关系
 [说明01和02的关系]
+```
 
 ---
 
-### 02 PRD Template
+### 02 PRD Template (含设计内容)
 
 ```markdown
 # [Project Name] PRD v1.0
@@ -148,7 +149,23 @@ _Created:_
 _Author:_
 
 ## Executive Summary
+
 [One page overview: what this project is, why it matters, and what success looks like.]
+
+## Design Prototype
+
+- **HTML 原型（本地）：** [localhost:xxxx/link]
+- **GitHub Pages：** [部署后填写]
+- **原型预览说明：** [描述核心交互流程]
+
+## Core UI Components
+
+### 组件 1：[名称]
+**外观：** [描述]
+**交互：** [行为]
+
+### 组件 2：[名称]
+...
 
 ## Feature List
 
@@ -191,7 +208,13 @@ _Author:_
 | Date | Reviewer | Decision | Notes |
 |------|----------|----------|-------|
 | | | | |
+
+---
+
+**原型调整 → PRD 同步更新。需求变化 → 原型同步修改。两者保持一致。**
 ```
+
+---
 
 ### Review Process
 
@@ -216,63 +239,7 @@ Reviewer approves
 
 ---
 
-## Phase 2: Design
-
-### Design Doc Template
-
-```markdown
-# [Project Name] Design v1.0
-_Created:_
-_Review Date:_
-
-## Design Links
-
-- **Interactive prototype (HTML):** [link — must be a working HTML page, not a mockup image]
-- Visual design: [link — Figma or image]
-- Live preview: [link]
-```
-
-**⚠️ 重要：设计文档必须包含可运行的 HTML 原型链接，不接受只有文字描述的设计稿。**
-
-## Core User Flow
-[Text description of the main user path]
-
-## Pages
-
-| Page | Purpose | Notes |
-|------|---------|-------|
-| | | |
-
-## Design Decisions
-
-| Decision | Choice | Rationale |
-|---------|--------|----------|
-| | | |
-
-## Review Issues
-
-| ID | Issue | Priority | Status | Resolution |
-|----|-------|----------|--------|------------|
-| Q-01 | | P1 | ✅ Resolved | |
-| Q-02 | | P0 | 🔄 In progress | |
-
-## Version History
-
-| Version | Date | Author | Changes |
-|---------|------|--------|---------|
-| V1.0 | | | Initial |
-```
-
-### Sync to PRD
-
-After design is finalized:
-- Copy key design decisions into the PRD
-- Add "Design finalized, see [link]" note in PRD
-- Keep both documents in sync
-
----
-
-## Phase 3: Development
+## Phase 2: Development
 
 ### Dev Design Template
 
@@ -297,7 +264,7 @@ After design is finalized:
 
 ---
 
-## Phase 4: Testing
+## Phase 3: Testing
 
 ### Test Case Template
 
@@ -334,7 +301,7 @@ Use DevTools to verify:
 
 ---
 
-## Phase 5: Compliance
+## Phase 4: Compliance
 
 ### Three-stage Compliance Check
 
@@ -348,7 +315,6 @@ Use DevTools to verify:
 | Private records | Diary, personal journals | Remove |
 | Specific itineraries | Exact routes, dates, companions | Generalize to "a trip" |
 | Credentials | ID, passport, passwords | Remove completely |
-| Private conversations | Chat logs, screenshots | Generalize or remove |
 
 **Scan order:**
 1. Read full content (do not skim)
@@ -381,7 +347,7 @@ Use DevTools to verify:
 
 ---
 
-## Phase 6: Acceptance
+## Phase 5: Acceptance
 
 ### Acceptance Report Template
 
@@ -416,7 +382,7 @@ _Sign-off:_
 
 ---
 
-## Phase 7: Retrospective
+## Phase 6: Retrospective
 
 ### Retrospective Template
 
@@ -476,9 +442,9 @@ _Date:_
 ```
 [ProjectName]_[DocType]_v[Version]
 Examples:
-  Magazine_PRD_v1.0
-  Magazine_Design_v1.0
-  Magazine_TestCases_v1.0
+  TravelCalc_需求分析01_v1.0
+  TravelCalc_PRD_v1.0
+  TravelCalc_测试用例_v1.0
 ```
 
 ### Deleting content
@@ -499,23 +465,21 @@ Every document tracks: version, date, author, changes
 |----------|----------------------|-------|--------|
 | 项目文件夹 | `{ProjectName}_项目` | 规划期 | |
 | 01需求分析 | `{ProjectName}_需求分析01_v版本` | Phase 1 | |
-| 02PRD | `{ProjectName}_PRD_v版本` | Phase 1 | |
-| 设计稿 | `{ProjectName}_设计稿_v版本` | Phase 2 | |
-| 开发设计 | `{ProjectName}_开发概念设计_v版本` | Phase 3 | |
-| 测试用例 | `{ProjectName}_测试用例_v版本` | Phase 4 | |
-| 合规报告 | `{ProjectName}_合规报告_v版本` | Phase 5 | |
-| 验收报告 | `{ProjectName}_验收报告_v版本` | Phase 6 | |
-| 上线通告 | `{ProjectName}_上线通告_v版本` | Phase 6 | |
-| 项目复盘 | `{ProjectName}_项目复盘_日期` | Phase 7 | |
+| 02PRD(含设计) | `{ProjectName}_PRD_v版本` | Phase 1 | |
+| 开发设计 | `{ProjectName}_开发概念设计_v版本` | Phase 2 | |
+| 测试用例 | `{ProjectName}_测试用例_v版本` | Phase 3 | |
+| 合规报告 | `{ProjectName}_合规报告_v版本` | Phase 4 | |
+| 验收报告 | `{ProjectName}_验收报告_v版本` | Phase 5 | |
+| 上线通告 | `{ProjectName}_上线通告_v版本` | Phase 5 | |
+| 项目复盘 | `{ProjectName}_项目复盘_日期` | Phase 6 | |
 
 **命名示例：**
 ```
 旅行购物计算器_项目/
 旅行购物计算器_需求分析01_v1.0
 旅行购物计算器_PRD_v1.0
-旅行购物计算器_设计稿_v1.0
+旅行购物计算器_开发概念设计_v1.0
 旅行购物计算器_测试用例_v1.0
-旅行购物计算器_验收报告_v1.0
 ```
 
 ---
