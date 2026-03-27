@@ -1,4 +1,4 @@
-# Monica 产品开发 SOP Skill v1.0
+# Magazine_产品开发SOP Skill v1.0
 
 _建立时间：2026-03-27_
 _来源：Monica Magazine 项目完整复盘 + Shirley 指导_
