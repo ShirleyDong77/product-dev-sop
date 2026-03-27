@@ -495,16 +495,28 @@ Every document tracks: version, date, author, changes
 
 ## Project Document Checklist
 
-| Document | Phase | Status |
-|----------|-------|--------|
-| PRD | Phase 1 | |
-| Design Doc | Phase 2 | |
-| Dev Design | Phase 3 | |
-| Test Cases | Phase 4 | |
-| Compliance Report | Phase 5 | |
-| Acceptance Report | Phase 6 | |
-| Launch Notice | Phase 6 | |
-| Retrospective | Phase 7 | |
+| Document | File Naming Convention | Phase | Status |
+|----------|----------------------|-------|--------|
+| 项目文件夹 | `{ProjectName}_项目` | 规划期 | |
+| 01需求分析 | `{ProjectName}_需求分析01_v版本` | Phase 1 | |
+| 02PRD | `{ProjectName}_PRD_v版本` | Phase 1 | |
+| 设计稿 | `{ProjectName}_设计稿_v版本` | Phase 2 | |
+| 开发设计 | `{ProjectName}_开发概念设计_v版本` | Phase 3 | |
+| 测试用例 | `{ProjectName}_测试用例_v版本` | Phase 4 | |
+| 合规报告 | `{ProjectName}_合规报告_v版本` | Phase 5 | |
+| 验收报告 | `{ProjectName}_验收报告_v版本` | Phase 6 | |
+| 上线通告 | `{ProjectName}_上线通告_v版本` | Phase 6 | |
+| 项目复盘 | `{ProjectName}_项目复盘_日期` | Phase 7 | |
+
+**命名示例：**
+```
+旅行购物计算器_项目/
+旅行购物计算器_需求分析01_v1.0
+旅行购物计算器_PRD_v1.0
+旅行购物计算器_设计稿_v1.0
+旅行购物计算器_测试用例_v1.0
+旅行购物计算器_验收报告_v1.0
+```
 
 ---
 
