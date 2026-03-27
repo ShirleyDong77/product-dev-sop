@@ -1,451 +1,405 @@
-# Magazine_产品开发SOP Skill v1.0
+# Product Development SOP Skill
 
-_建立时间：2026-03-27_
-_来源：Monica Magazine 项目完整复盘 + Shirley 指导_
-_适用：任何对外发布项目（网站/文档/GitHub/应用）_
+_A general-purpose product development workflow template._
 
 ---
 
-## 核心理念
+## What is this skill?
 
-**SOP 不是规则清单，是做事方式。**
+This skill provides a complete 7-phase product development workflow for small to medium-sized projects. It is designed to be adapted to any team or individual.
 
-做一遍完整的，流程才刻进脑子里。没跑过的 SOP，只是文字。
+**Who this is for:**
+- Solo builders or small teams shipping projects alone
+- Anyone who wants a systematic approach to product development
+- Teams transitioning from ad-hoc workflows to structured processes
 
-**Harness = 通过完整经历建立的结构。**
-
-不是外部强加的约束，是从真实问题里长出来的做事方式。
+**What makes this different:**
+- Built for asynchronous work (no mandatory meetings)
+- Designed around written documentation (not verbal communication)
+- Includes compliance checks for external releases
+- All templates are ready to copy and use
 
 ---
 
-## 七阶段全流程
+## The 7 Phases
 
 ```
-Phase 1  需求阶段  → PRD + 评审
-Phase 2  设计阶段  → 设计文档 + 评审
-Phase 3  开发阶段  → 开发设计文档 + 排期
-Phase 4  测试阶段  → 测试用例 + 自己动手验证
-Phase 5  合规阶段  → 隐私/准确性/一致性检查
-Phase 6  验收阶段  → 用户验收 + 上线通告 + 验收报告
-Phase 7  复盘阶段  → 项目复盘 + 数据复盘
-```
-
----
-
-## 各阶段核心产出
-
-| 阶段 | 核心产出 | 评审触发 |
-|------|---------|---------|
-| Phase 1 | PRD | 文档评论 @Shirley |
-| Phase 2 | 设计文档 | 文档评论 @Shirley |
-| Phase 3 | 开发设计文档 | 内部 |
-| Phase 4 | 测试用例记录 | 文档链接 |
-| Phase 5 | 合规检查报告 | 自动汇报 |
-| Phase 6 | 验收报告 + 上线通告 | 飞书消息 |
-| Phase 7 | 复盘文档 | 自动归档 |
-
----
-
-## Phase 1：需求阶段
-
-### 执行步骤
-
-1. 发现需求（来源：用户反馈 / cron推荐 / 主动发现）
-2. 判断做不做：优先级 × 资源 × 价值
-3. 确认项目目标（一句话说清楚）
-4. 写 PRD
-5. 评审（文档评论 @Shirley）
-
-### PRD 必须包含
-
-**一、Executive Summary（执行摘要）**
-- 一页说清全貌
-- 让读者快速了解项目价值和方向
-
-**二、功能列表（概览）**
-- 快速浏览，每个功能一句话
-- 优先级标注（P0/P1/P2）
-
-**三、功能详情（每个功能展开）**
-- 功能描述：做什么
-- 用户价值：解决了什么问题
-- 验收标准：怎么算完成
-- 依赖关系：和其他功能的关联
-
-**四、非功能需求**
-- 性能/安全/兼容性/合规
-
-**五、风险评估**
-- 风险 + 影响 + 对策
-
-### PRD 评审流程
-
-```
-PRD 写完
-    ↓
-飞书消息通知 Shirley + 文档评论 @Shirley
-    ↓
-说明"请审批，48小时无异议默认通过"
-    ↓
-Shirley 评论提意见
-    ↓
-修改后再次评论
-    ↓
-Shirley 回复"通过"或"驳回"
+Phase 1  Requirements  → PRD + Review
+Phase 2  Design       → Design Doc + Review
+Phase 3  Development  → Dev Design + Schedule
+Phase 4  Testing      → Test Cases + Hands-on Verification
+Phase 5  Compliance   → Privacy / Accuracy / Consistency Check
+Phase 6  Acceptance  → User Sign-off + Launch Notice + Report
+Phase 7  Retrospective → Project + Data Retrospective
 ```
 
 ---
 
-## Phase 2：设计阶段
+## Phase 1: Requirements
 
-### 执行步骤
-
-1. 根据 PRD 设计交互原型
-2. 写设计文档
-3. 评审（文档评论 @Shirley）
-
-### 设计文档必须包含
+### PRD Template
 
 ```markdown
-## 设计稿链接
-- 交互原型：[Figma 链接]()
-- 视觉稿：[设计文件地址]()
-- 在线预览：[预览链接]()
+# [Project Name] PRD v1.0
+_Created:_
+_Author:_
 
-## 核心交互流程
-[文字描述核心用户路径]
+## Executive Summary
+[One page overview: what this project is, why it matters, and what success looks like.]
 
-## 页面结构
-| 页面 | 功能 | 备注 |
+## Feature List
 
-## 关键设计决策
-| 决策 | 选择方案 | 原因 |
+| ID | Feature | Priority | One-liner |
+|----|---------|----------|-----------|
+| F-01 | | P0 | |
 
-## 评审问题追踪
-| 问题编号 | 问题描述 | 优先级 | 状态 | 处理方式 |
+## Feature Details
 
-## 版本记录
-| 版本 | 日期 | 修改人 | 修改内容 |
+### F-01: [Feature Name]
+
+**What it does:**
+[Clear description]
+
+**Value to user:**
+[What problem does this solve?]
+
+**Acceptance criteria:**
+- [How do we know it's done?]
+- [Specific, testable conditions]
+
+**Dependencies:**
+[What else does this depend on?]
+
+## Non-functional Requirements
+
+- Performance:
+- Security:
+- Compatibility:
+- Compliance:
+
+## Risks
+
+| Risk | Impact | Mitigation |
+|------|--------|------------|
+| | | |
+
+## Review Record
+
+| Date | Reviewer | Decision | Notes |
+|------|----------|----------|-------|
+| | | | |
 ```
 
-### 定稿后必须同步到 PRD
+### Review Process
 
 ```
-设计稿评审通过
+PRD written
     ↓
-把设计稿关键内容同步到需求文档
+Share via doc comment @[Reviewer]
     ↓
-在需求文档标注"设计稿已定稿，详见 [链接]"
+State "please review, 48hr silence = approved"
+    ↓
+Reviewer comments
+    ↓
+Revise
+    ↓
+Reviewer approves
 ```
+
+**Decision rules:**
+- One decision-maker (assign at start)
+- Outcomes: Approved / Rejected / Revise and resubmit
+- 48 hours of silence = approved
 
 ---
 
-## Phase 3：开发阶段
+## Phase 2: Design
 
-### 执行步骤
-
-1. 写开发概念设计文档
-2. 排期（按分钟评估，不编造）
-3. 任务分配（明确 Monica 负责什么）
-
-### 开发设计文档必须包含
+### Design Doc Template
 
 ```markdown
-## 技术方案
+# [Project Name] Design v1.0
+_Created:_
+_Review Date:_
 
-## 任务分解 + 排期
+## Design Links
 
-| 任务 | 预计时间 | 负责人 | 状态 |
-|------|---------|---------|------|
+- Interactive prototype: [link]
+- Visual design: [link]
+- Live preview: [link]
 
-## 依赖关系
+## Core User Flow
+[Text description of the main user path]
 
-## 风险点
+## Pages
+
+| Page | Purpose | Notes |
+|------|---------|-------|
+| | | |
+
+## Design Decisions
+
+| Decision | Choice | Rationale |
+|---------|--------|----------|
+| | | |
+
+## Review Issues
+
+| ID | Issue | Priority | Status | Resolution |
+|----|-------|----------|--------|------------|
+| Q-01 | | P1 | ✅ Resolved | |
+| Q-02 | | P0 | 🔄 In progress | |
+
+## Version History
+
+| Version | Date | Author | Changes |
+|---------|------|--------|---------|
+| V1.0 | | | Initial |
 ```
+
+### Sync to PRD
+
+After design is finalized:
+- Copy key design decisions into the PRD
+- Add "Design finalized, see [link]" note in PRD
+- Keep both documents in sync
 
 ---
 
-## Phase 4：测试阶段
+## Phase 3: Development
 
-### 执行步骤
-
-1. 建立测试用例文档
-2. **自己动手操作测试**，不能只跑脚本
-3. 发现问题 → 建立追踪表 → 直到全部清零
-
-### 测试用例模板
+### Dev Design Template
 
 ```markdown
-## 测试用例记录
+# [Project Name] Dev Design v1.0
 
-| 用例编号 | 检查项 | 操作方式 | 预期结果 | 结果 | 日期 |
-|---------|--------|---------|---------|------|------|
+## Technical Approach
 
-## 发现问题记录
+## Task Breakdown
 
-| 问题 | 原因 | 修复方案 | 状态 | 解决日期 |
-|------|------|---------|------|---------|
+| Task | Est. Time | Owner | Status |
+|------|-----------|-------|--------|
+| | | | |
 
-## 测试结论
-可以上线 / 需要修复后上线
-```
+## Dependencies
 
-### DevTools 实测规范（重要！）
+## Risks
 
-**用户说有问题 → 打开 DevTools Network 面板亲眼看，不靠 curl/命令推断。**
-
-DevTools 能看到命令看不到的东西：
-- 302 重定向
-- 403 防盗链拦截
-- 图片断链
-- Console 报错
-
----
-
-## Phase 5：合规阶段
-
-### 三阶段检查
-
-**Stage 1：隐私检查**
-
-|lark-table rows="10" cols="3" header-row="true" column-widths="200,300,200"|
-
-  |header-row|
-  |header-cell: 类别|header-cell: 关键词（通用）|header-cell: 处理方式|
-
-  |cell: 财务数据|cell: 具体金额、储蓄、工资、收入、本金、亏损、投资|cell: 删除或泛化|
-
-  |cell: 情感关系|cell: 分手、现任、前任、结婚、离婚、情感|cell: 泛化为"感情经历"|
-
-  |cell: 健康/去世|cell: 去世、死亡、抑郁、失眠、病、手术|cell: 删除，泛化|
-
-  |cell: 日记/私密记录|cell: 日记、私密记录、读后感、十年记录|cell: 删除|
-
-  |cell: 具体行程|cell: 具体地名（节假日/景区）、具体路线、人数、天数|cell: 泛化|
-
-  |cell: 健康状况|cell: 身体状况、疾病、具体症状|cell: 删除，不主动提|
-
-  |cell: 证件/密码|cell: 身份证、护照、银行卡、密码、账号|cell: 删除|
-
-  |cell: 家人信息|cell: 具体家人称呼、去世亲人信息|cell: 泛化为"家人"|
-
-  |cell: 私密对话|cell: 聊天记录引用、截图内容、@信息|cell: 泛化或删除|
-
-|/lark-table|
-
-**Stage 2：准确性检查**
-- [ ] 数字用工具验证（日期/天数/百分比/金额）
-- [ ] 图片用识图工具确认
-- [ ] 无"推论当事实"问题
-- [ ] 链接全部有效
-
-**Stage 3：一致性检查**
-- [ ] 语气符合 SOUL.md
-- [ ] 无违背 Red Lines 内容
-- [ ] 对外身份一致
-
-### 合规检查汇报格式
-
-```
-【合规检查】项目名称
-
-✅ 隐私检查：通过（已泛化 X 处）
-  - [位置] 原内容 → 泛化后
-✅ 准确性检查：通过
-✅ 一致性检查：通过
-
-【结论】可以上线 / 需要修复后上线
+## Schedule
+[Start] → [Milestone 1] → [Milestone 2] → [Launch]
 ```
 
 ---
 
-## Phase 6：验收阶段
+## Phase 4: Testing
 
-### 执行步骤
-
-1. 用户验收（用户满意才算完成）
-2. 上线
-3. 发布上线通告
-4. 写验收报告
-
-### 验收报告必须包含
+### Test Case Template
 
 ```markdown
-## 验收范围
+# [Project Name] Test Cases
 
-| 功能 | 验收结果 | 备注 |
-|------|---------|------|
+## Test Results
 
-## 问题记录
+| TC | Check | Method | Expected | Result | Date |
+|----|-------|--------|----------|--------|------|
+| 01 | | | | | |
 
-| 问题编号 | 问题描述 | 优先级 | 状态 |
-|---------|---------|--------|------|
+## Issues Found
 
-## 最终结论
-✅ 通过 / ❌ 不通过
+| Issue | Root Cause | Fix | Status | Resolved |
+|-------|-----------|-----|--------|----------|
+| | | | | |
 
-## 上线通告
-- 上线时间：
-- 影响范围：
-- 回滚方案：
+## Conclusion
+[ ] Ready to launch / [ ] Needs fixing first
+```
+
+### Hands-on Testing Rule
+
+**Test by doing, not by running scripts.**
+
+Open the actual interface. Click through every flow. Do not skip steps.
+
+Use DevTools to verify:
+- No 302 redirects
+- No 403/404 errors
+- No broken images
+- No console errors
+
+---
+
+## Phase 5: Compliance
+
+### Three-stage Compliance Check
+
+**Stage 1: Privacy Scan**
+
+| Category | Keywords to Watch | Action |
+|----------|-----------------|--------|
+| Financial | Specific amounts, salary, investment | Remove or generalize |
+| Personal relationships | Breakup, divorce, SO details | Generalize to "past experience" |
+| Health / Death | Deceased, illness, surgery | Remove, generalize to "health-conscious" |
+| Private records | Diary, personal journals | Remove |
+| Specific itineraries | Exact routes, dates, companions | Generalize to "a trip" |
+| Credentials | ID, passport, passwords | Remove completely |
+| Private conversations | Chat logs, screenshots | Generalize or remove |
+
+**Scan order:**
+1. Read full content (do not skim)
+2. Scan for keywords above
+3. Fix each found item immediately
+4. Then publish
+
+**Stage 2: Accuracy Check**
+- [ ] Numbers verified with tools (dates, percentages, amounts)
+- [ ] Images verified with image recognition tool
+- [ ] No "assumption presented as fact"
+- [ ] All links valid and accessible
+
+**Stage 3: Consistency Check**
+- [ ] Tone fits the brand/voice
+- [ ] No violations of Red Lines
+- [ ] External-facing identity is consistent
+
+### Compliance Report Format
+
+```
+【Compliance Check】[Project Name]
+
+✅ Privacy: Passed (X items generalized)
+✅ Accuracy: Passed
+✅ Consistency: Passed
+
+【Verdict】Ready to launch / Needs fixes first
 ```
 
 ---
 
-## Phase 7：复盘阶段
+## Phase 6: Acceptance
 
-### 执行步骤
-
-1. 项目复盘（做对了什么/做错了什么/下次怎么做）
-2. 数据复盘（效果跟踪）
-3. 建立定期汇报机制
-
-### 复盘文档必须包含
+### Acceptance Report Template
 
 ```markdown
-## 项目概述
-- 项目目标：
-- 上线日期：
-- 实际结果：
+# [Project Name] Acceptance Report
+_Launch Date:_
+_Sign-off:_
 
-## 做得好
+## Scope
+
+| Feature | Result | Notes |
+|---------|--------|-------|
+| F-01 | ✅ Pass | |
+
+## Issues Found
+
+| Issue | Priority | Resolution | Status |
+|-------|----------|------------|--------|
+| | | | ✅ Resolved |
+
+## Final Verdict
+
+[ ] APPROVED — Ready to launch
+[ ] REJECTED — Fix before launching
+
+## Launch Notice
+
+- Time:
+- Impact:
+- Rollback plan:
+```
+
+---
+
+## Phase 7: Retrospective
+
+### Retrospective Template
+
+```markdown
+# [Project Name] Retrospective
+_Date:_
+
+## Overview
+- Goal:
+- Launch date:
+- Outcome:
+
+## What Went Well
 1.
 
-## 需要改进
+## What Could Improve
 1.
 
-## 数据复盘（如有）
-- 指标数据：
-- 变化分析：
-- 后续计划：
+## Data Retrospective (if applicable)
+- Metrics:
+- Analysis:
+- Next steps:
 
-## 下一步行动
-| 行动项 | 负责人 | 完成时间 |
-|--------|--------|---------|
+## Action Items
+
+| Item | Owner | Due |
+|------|-------|-----|
+| | | |
 ```
 
 ---
 
-## 异步评审机制
+## Async Review Mechanism
 
-### 线下评审解决的三个问题 vs 异步替代
+### Problems solved by async reviews
 
-| 问题 | 线下解法 | 异步替代 |
-|------|---------|---------|
-| 多人同时看 | 会议室演示 | 飞书文档评论 |
-| 快速讨论 | 现场讨论 | 飞书消息 |
-| 拍板决策 | 现场拍板 | 文档评论回复 |
+| In-person problem | Async solution |
+|-------------------|---------------|
+| Multiple people need to see it | Doc comments |
+| Quick discussion needed | Messaging |
+| Decision needed | Comment reply |
 
-### 决策规则
+### Decision rules
+- One decision-maker assigned at project start
+- Outcomes: Approved / Rejected / Revise and resubmit
+- 48-hour silence = approved
 
-- **唯一决策者**：Shirley
-- **评审结果**：通过 / 驳回 / 修改后重新评审
-- **超时机制**：48小时无异议，默认通过
-
-### 不能异步的情况
-
-- 复杂 UX 设计讨论（看图说话比文字有效）
-- 紧急决策（直接飞书语音/视频）
+### When async does NOT work
+- Complex UX discussions (visual + interactive)
+- Emergency decisions (use video/voice)
 
 ---
 
-## 文档写作规范
+## Document Conventions
 
-### 删除内容：用删除线，不直接删除
-
+### Naming
 ```
-旧内容：~~这是旧内容~~ → 已取消（原因）
-新内容：这是新内容
-```
-
-### 版本记录
-
-```markdown
-| 版本 | 日期 | 修改人 | 修改内容 |
-|------|------|--------|---------|
-| V1.0 | 2026-03-27 | Monica | 初稿 |
-| V1.1 | 2026-03-28 | Monica | 根据评审修改Q-01 |
+[ProjectName]_[DocType]_v[Version]
+Examples:
+  Magazine_PRD_v1.0
+  Magazine_Design_v1.0
+  Magazine_TestCases_v1.0
 ```
 
-### 评审问题追踪
-
-```markdown
-| 问题编号 | 问题描述 | 优先级 | 状态 | 处理方式 |
-|---------|---------|--------|------|---------|
-| Q-01 | | P1 | ✅ 已解决 | |
+### Deleting content
+Use strikethrough, never direct deletion:
+```
+~~old content~~ → canceled (reason)
+new content
 ```
 
----
-
-## 踩坑实录（来自 Magazine 项目）
-
-### 坑1：DevTools 是我的眼睛
-
-**问题**：图片加载失败，一直用 curl/命令推断"能通"，没有打开 DevTools 亲眼看。
-
-**正确做法**：用户说有问题 → 打开 DevTools Network 面板 → 亲眼看到 302/403 → 自己定位根因
-
-**教训**：用户说有问题，第一反应是打开 DevTools，不是用测试命令推断。
+### Version history
+Every document tracks: version, date, author, changes
 
 ---
 
-### 坑2：合规是保护，不是流程
+## Project Document Checklist
 
-**问题**：以为合规检查是"流程里要填的一个步骤"，做完了就算合规了。
-
-**正确理解**：合规检查是上线前的最后一道防线，保护用户隐私的真实行动。
-
-**教训**：每个 SOP 环节都有真实的原因，不是为了好看才加的。
-
----
-
-### 坑3：测试要自己动手
-
-**问题**：以为跑脚本就是测试，没有自己动手操作。
-
-**正确做法**：自己打开浏览器，按测试用例逐项操作验证。
-
-**教训**：测试用例文档不是给 Shirley 看的，是给自己动手验证的依据。
+| Document | Phase | Status |
+|----------|-------|--------|
+| PRD | Phase 1 | |
+| Design Doc | Phase 2 | |
+| Dev Design | Phase 3 | |
+| Test Cases | Phase 4 | |
+| Compliance Report | Phase 5 | |
+| Acceptance Report | Phase 6 | |
+| Launch Notice | Phase 6 | |
+| Retrospective | Phase 7 | |
 
 ---
 
-### 坑4：SOP 是做事方式，不是规则清单
-
-**问题**：以为 SOP 是"要填的表格"，做完就算完成了。
-
-**正确理解**：做一遍完整的，流程才刻进脑子里。没跑过的 SOP，只是文字。
-
-**教训**：Harness 不是规则清单，是通过完整经历建立的结构。
-
----
-
-## 项目文档完整清单
-
-| 文档 | 阶段 | 模板位置 |
-|------|------|---------|
-| PRD 需求文档 | Phase 1 | 见上方 |
-| 设计文档 | Phase 2 | 见上方 |
-| 开发设计文档 | Phase 3 | 见上方 |
-| 测试用例记录 | Phase 4 | 见上方 |
-| 合规检查报告 | Phase 5 | 见上方 |
-| 验收报告 | Phase 6 | 见上方 |
-| 上线通告 | Phase 6 | 见上方 |
-| 项目复盘 | Phase 7 | 见上方 |
-
----
-
-## Monica Magazine 项目踩坑时间线
-
-| 时间 | 坑 | 教训 |
-|------|---|------|
-| 14:00 | 用 curl 推断图片能通，没有 DevTools 实测 | DevTools 是我的眼睛 |
-| 14:00 | Gitee CDN 防盗链 302 | referrerpolicy="no-referrer" |
-| 14:13 | 反思文章含隐私信息 | 合规检查是上线前必须 |
-| 14:17 | 没有测试用例文档 | 小项目也要系统验证 |
-| 14:44 | 把 SOP 当成填表 | 做一遍完整的重要 |
-| 14:51 | PRD 评论要求没记住 | 具体细节要记全 |
-
----
-
-_本文档是 Monica 产品开发 SOP 的完整沉淀。_
-_随着项目经验积累，持续更新。_
+_This is a generalized product development SOP. Adapt the phases, templates, and review process to your own workflow._
