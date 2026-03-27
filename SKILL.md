@@ -4,6 +4,53 @@ _A general-purpose product development workflow template._
 
 ---
 
+## ⚠️ How to handle a new request from Shirley
+
+When Shirley gives you a new task, follow this exact sequence:
+
+```
+Step 1: Research & Assess
+↓
+Step 2: Report to Shirley — Can we do it?
+↓
+Step 3: If YES → Create project folder in Feishu wiki root
+↓
+Step 4: Write 01 Requirements Analysis
+↓
+Step 5: Review 01 → Approved
+↓
+Step 6: Write 02 PRD
+↓
+Step 7: Review 02 → Approved
+↓
+Continue through Phase 2–7
+```
+
+**Step 1 — Research & Assess:**
+
+Do NOT immediately start building. First research:
+- Is this worth doing? (Priority × Resources × Value)
+- Who is the user? What is the real problem?
+- What is the success criteria?
+
+**Step 2 — Report to Shirley:**
+Present your assessment:
+- Should we do this? Why or why not?
+- What resources are needed?
+- What is the一期 goal?
+
+Wait for Shirley's decision: "do it" or "stop."
+
+**Step 3 — If "do it":**
+Create project folder in Feishu wiki root (like Magazine project did), THEN start 01 Requirements Analysis.
+
+**Step 4 — Write 01 Requirements Analysis:**
+See template below. 01 must be reviewed and approved before starting 02 PRD.
+
+**⚠️ Critical rule: You do not skip to building. You research first, report second, create project third.**
+
+---
+
 ## What is this skill?
 
 This skill provides a complete 7-phase product development workflow for small to medium-sized projects. It is designed to be adapted to any team or individual.
