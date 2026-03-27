@@ -37,7 +37,63 @@ Phase 7  Retrospective → Project + Data Retrospective
 
 ## Phase 1: Requirements
 
-### PRD Template
+### ⚠️ Phase 1 has TWO required documents
+
+**Phase 1 = 01需求分析 + 02PRD**
+
+**01需求分析必须在02PRD之前完成。**
+01未通过评审，不得开始02PRD。
+
+**Why:** Without 01, the PRD lacks problem definition, user scenarios, and success criteria. This is why the Magazine calculator PRD was rejected — I skipped requirements analysis and went straight to PRD.
+
+---
+
+### 01 Requirements Analysis Template
+
+```markdown
+# [Project Name] 需求分析 01 v1.0
+_Created:_
+
+## 一、用户场景分析
+
+### 场景 1：[描述具体场景]
+用户正在……
+
+**用户心理：**
+- ……
+
+**用户痛点：**
+- ……
+
+## 二、需求根因分析
+
+**表面需求：**
+**深层需求：**
+**需求本质：**
+
+## 三、竞品分析
+
+| 竞品 | 优点 | 缺点 |
+|------|------|------|
+| | | |
+
+## 四、成功标准
+
+**功能成功标准：**
+**业务成功标准：**
+**目标用户：**
+
+## 五、一期目标（v1.0）
+[一句话说清楚本期做什么、不做什么]
+
+## 六、后续扩展方向
+
+## 七、与 PRD 的关系
+[说明01和02的关系]
+
+---
+
+### 02 PRD Template
 
 ```markdown
 # [Project Name] PRD v1.0
@@ -124,9 +180,12 @@ _Review Date:_
 
 ## Design Links
 
-- Interactive prototype: [link]
-- Visual design: [link]
+- **Interactive prototype (HTML):** [link — must be a working HTML page, not a mockup image]
+- Visual design: [link — Figma or image]
 - Live preview: [link]
+```
+
+**⚠️ 重要：设计文档必须包含可运行的 HTML 原型链接，不接受只有文字描述的设计稿。**
 
 ## Core User Flow
 [Text description of the main user path]
